@@ -84,17 +84,20 @@ Below is an example of how you can install the repo:
     ```
    docker pull selenium/node-firefox
    ```
-[For old macbook and windows (non arm64 devices)]
+[For old macbook and windows (non arm64 devices)][[You can change port number if needed]
+
 3. Run the Selenium Grid Node for Firefox
 
  ```
     docker run -d -p 4444:4444 selenium/standalone-firefox
 ```
-[For macbook M series chip]
+[For macbook M series chip] [You can change port number if needed]
 
 ```
 docker run -d -p 4444:4444 seleniarm/standalone-firefox
 ```
+4. Then check the status ```http://localhost:4444/grid/console``` and verify firefix is running
+<img width="1242" alt="Screenshot 2024-04-22 at 19 56 18" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/ebb378d3-b98a-4b7d-9412-c16673a245da">
 
 
 ## Run Project

@@ -97,8 +97,6 @@ docker run -d -p 4444:4444 seleniarm/standalone-firefox
 ```
 
 
-
-
 ## Run Project
 
 1. Build :
@@ -116,25 +114,30 @@ gradle run
 [![Video Title](https://img.youtube.com/vi/zRotlP_uTpg/0.jpg)](https://youtu.be/zRotlP_uTpg)
 
 ## Test Cases Snaps (Using In device Firefox)
-![](../Desktop/Screenshot 2024-04-22 at 13.17.04.png)
-![](../Desktop/Screenshot 2024-04-22 at 13.17.39.png)
+![](../Desktop/Screenshot <img width="312" alt="Screenshot 2024-04-22 at 13 17 04" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/d6f055f7-9d82-4246-ba0f-d0dee8d95280">
+2024-04-22 at 13.17.04.png)
+![](../Desktop/Screenshot 2024-04-22 at 13.17.<img width="322" alt="Screenshot 2024-04-22 at 13 17 39" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/44f2d961-3224-4746-af2d-f4d515170778">
+39.png)
 
-![](../Desktop/Screenshot 2024-04-22 at 13.20.35.png)
-![](../Desktop/Screenshot 2024-04-22 at 13.20.45.png)
+![](../Desktop/Screenshot 2024-04-22 at 13<img width="322" alt="Screenshot 2024-04-22 at 13 20 35" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/da10b0eb-4493-41bb-bcef-c9f0d171102f">
+.20.35.png)
+![](../Desktop/Screenshot 2024-04-22 at 13<img width="322" alt="Screenshot 2024-04-22 at 13 20 45" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/3a56c22a-76fe-45e5-a6a2-e2bda087d7bb">
+.20.45.png)
 
 
 ## Test Cases Snaps (Using Docker)
 
-![](../Desktop/Screenshot 2024-04-22 at 13.47.21.png)
-![](../Desktop/Screenshot 2024-04-22 at 13.48.00.png)
+![](../Desktop/Screenshot 2024-04-<img width="322" alt="Screenshot 2024-04-22 at 13 47 21" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/2fd5f9df-26b0-48af-9bba-04547568a72b">
+22 at 13.47.21.png)
+![](../Desktop/Screenshot 2024-04<img width="331" alt="Screenshot 2024-04-22 at 13 48 00" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/9e02dc42-e405-48bb-8046-23d728a5fac6">
+-22 at 13.48.00.png)
 
-![](../Desktop/Screenshot 2024-04-22 at 13.48.37.png)
+![](../Desktop/Screenshot 2024-0<img width="331" alt="Screenshot 2024-04-22 at 13 48 37" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/80f163bf-45fb-40ae-9d18-5d6ff7cfee2f">
+4-22 at 13.48.37.png)
+<img width="331" alt="Screenshot 2024-04-22 at 13 48 47" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/f344d714-8ed8-4cc5-a196-8d5df0186464">
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 
 

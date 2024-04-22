@@ -40,14 +40,7 @@ java {
     }
 }
 
-tasks.named('test') {
-    // Use JUnit Platform for unit tests.
-    useJUnitPlatform()
-    reports {
-        junitXml.enabled = true
-        html.enabled = true
-    }
-}
+
 
 
 task run(type: JavaExec) {

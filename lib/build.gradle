@@ -1,0 +1,81 @@
+plugins {
+    // Apply the java-library plugin for API and implementation separation.
+    id 'java-library'
+    id 'jacoco'
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.1.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.32'
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    // Use JUnit Jupiter for testing.
+    testImplementation libs.junit.jupiter
+    testImplementation 'org.junit.platform:junit-platform-console:1.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.8.1'
+    testImplementation 'org.junit.platform:junit-platform-launcher:1.8.1'
+    testImplementation 'org.junit.platform:junit-platform-reporting:1.8.1'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.1.1'
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    api libs.commons.math3
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation libs.guava
+}
+
+// Apply a specific Java toolchain to ease working on different environments.
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+    reports {
+        junitXml.enabled = true
+        html.enabled = true
+    }
+}
+
+
+task run(type: JavaExec) {
+    description = 'Runs the SDETChallengeTest class directly.'
+    group = 'application'
+
+    // Set the fully qualified name of the test class
+    main = 'org.junit.platform.console.ConsoleLauncher'
+
+    // Pass the test class as an argument
+    args '--select-class', 'SDETChallengeTest'
+
+    // Set the classpath including the runtime classpath of your project
+    classpath = sourceSets.test.runtimeClasspath
+
+    // Configure the JavaExec task
+    doFirst {
+        // Redirect System.out to capture output
+        System.setOut(new PrintStream(new ByteArrayOutputStream()))
+    }
+
+
+
+}
+
+
+
+
+
+
+

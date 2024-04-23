@@ -67,13 +67,15 @@ Below is an example of how you can install the repo:
    ```sh
    cd fetchcodinfexercide
    ```
-3. Update the webdriver.gecko.driver system property in the SDETChallengeTest class with the path to geckodriver. 
+3. Update the webdriver.gecko.driver system property in the SDETChallengeTest class with the path(if needed, generally macbook firefox has same path under Applications folder) to geckodriver. 
 
+
+<img width="905" alt="Screenshot 2024-04-22 at 20 10 12" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/06a885ca-fd5e-4b68-a8ad-d46838a953c2">
 
 4. Uncomment the appropriate WebDriver setup code in the browserStart method for  windows devices and run it via docker selenium grid. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Docker setup (Can be used to test on any device )
+## Docker setup (Can be used to test on any device, you skip this if running locally on macbook)
 
 [For old macbook and windows (non arm64 devices)]
 1. Pull selenium hub  
@@ -98,6 +100,12 @@ docker run -d -p 4444:4444 seleniarm/standalone-firefox
 ```
 4. Then check the status ```http://localhost:4444/grid/console``` and verify firefix is running
 <img width="1242" alt="Screenshot 2024-04-22 at 19 56 18" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/ebb378d3-b98a-4b7d-9412-c16673a245da">
+
+5. Comment the code (public static void browserStart()) which is being used by local machine (Only if using docker, else no change is needed)
+<img width="980" alt="Screenshot 2024-04-22 at 20 04 15" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/aca1b505-78b3-4ef8-a3e3-7ba4d72037d2">
+
+5. Uncomment the selenium grid code (Function name: public static void browserStart())  and then run project
+<img width="980" alt="Screenshot 2024-04-22 at 20 02 48" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/4c96fff2-92ee-4ed2-935b-590e6b2a2955">
 
 
 ## Run Project

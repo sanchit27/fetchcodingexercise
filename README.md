@@ -72,7 +72,7 @@ Below is an example of how you can install the repo:
 
 <img width="905" alt="Screenshot 2024-04-22 at 20 10 12" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/06a885ca-fd5e-4b68-a8ad-d46838a953c2">
 
-4. Uncomment the appropriate WebDriver setup code in the browserStart method for  windows devices and run it via docker selenium grid. 
+4. If not using mac, Uncomment the slenium grid WebDriver setup code in the browserStart method for and run it via docker selenium grid. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Docker setup (Can be used to test on any device, you skip this if running locally on macbook)

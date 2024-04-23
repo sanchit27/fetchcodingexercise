@@ -53,7 +53,7 @@ To run the tests locally, follow these steps:
 
 ![img.png](img.png)
 
-- **Docker (For Windows Users):** Install Docker and follow the steps given in the README.
+- **Docker (For Windows/linux Users, even mac and other OS devices can also use if needed):** Install Docker and follow the steps given in the README.
 
 ### Installation
 

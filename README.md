@@ -104,7 +104,7 @@ docker run -d -p 4444:4444 seleniarm/standalone-firefox
 5. Comment the code (public static void browserStart()) which is being used by local machine (Only if using docker, else no change is needed)
 <img width="980" alt="Screenshot 2024-04-22 at 20 04 15" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/aca1b505-78b3-4ef8-a3e3-7ba4d72037d2">
 
-5. Uncomment the selenium grid code (Function name: public static void browserStart())  and then run project
+5. Uncomment the selenium grid code, change the url (GRID_HUB_URL) if running on other ports (Function name: public static void browserStart())  and then run project
 <img width="980" alt="Screenshot 2024-04-22 at 20 02 48" src="https://github.com/sanchit27/fetchcodingexercise/assets/18355760/4c96fff2-92ee-4ed2-935b-590e6b2a2955">
 
 

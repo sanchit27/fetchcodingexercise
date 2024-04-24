@@ -109,7 +109,7 @@ public class SDETChallengeTest {
             // Click on the Weigh button
             driver.findElement(By.id("weigh")).click();
 
-            // Get the result details using getNthResult method
+            // Get the result details using fetchIndexData method
             String resultDetails = fetchIndexData(1);
             System.out.println("Result First Operation:"+resultFirst.getText());
             assert !resultFirst.getText().equals(" ?");
@@ -194,7 +194,6 @@ public class SDETChallengeTest {
     @Test()
     @Order(4)
     public void testStep4() {
-        // Test step 3 code here...
 
         driver.findElement(By.id("coin_" + getFakeElementValue().getText())).click();
         popupDialogue = driver.switchTo().alert().getText();

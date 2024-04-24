@@ -131,15 +131,10 @@ public class SDETChallengeTest {
             } else if (resultFirst.getText().equals(">")) {
                 coins = Arrays.copyOfRange(coins, 3, 6);
             }
+            
+            // Click on the Reset button
+            driver.findElement(By.cssSelector("#root > div > div.game > div:nth-child(4) > button#reset"));
 
-
-            driver.findElement(By.id("reset")).click();
-            driver.findElement(By.id("left_0")).clear();
-            driver.findElement(By.id("left_1")).clear();
-            driver.findElement(By.id("left_2")).clear();
-            driver.findElement(By.id("right_0")).clear();
-            driver.findElement(By.id("right_1")).clear();
-            driver.findElement(By.id("right_2")).clear();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -162,7 +157,7 @@ public class SDETChallengeTest {
         // Click on the Weigh button
         driver.findElement(By.id("weigh")).click();
         // Click on the Reset button
-        driver.findElement(By.id("reset")).click();
+        driver.findElement(By.cssSelector("#root > div > div.game > div:nth-child(4) > button#reset"));
 
         // Get the result details using fetchIndexData method
         String resultDetailsSecond = fetchIndexData(2);

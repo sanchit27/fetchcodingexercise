@@ -65,7 +65,7 @@ Below is an example of how you can install the repo:
    ```
 2. Navigate to the project directory:
    ```sh
-   cd fetchcodinfexercide
+   fetchcodingexercise/lib/src/main/java/SDETChallengeTest
    ```
 3. Update the webdriver.gecko.driver system property in the SDETChallengeTest class with the path(if needed, generally macbook firefox has same path under Applications folder) to geckodriver. 
 
